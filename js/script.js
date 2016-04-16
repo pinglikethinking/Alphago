@@ -80,7 +80,6 @@ for(var i=0;i<count;i++){
  */
 var chess= document.getElementById('chess');
 var context=chess.getContext('2d');
-context.strokeStyle="#BFBFBF";
 
 var logo=new Image();
 logo.src="img/logo.jpg";
@@ -89,6 +88,7 @@ logo.onload=function(){
 	drawChessBoard();	
 };
 
+context.strokeStyle="#BFBFBF";
 function drawChessBoard(){
 for(var i=0;i<15;i++){
 	context.moveTo(15+i*30,15);

@@ -3,3 +3,45 @@ canvas{
 	margin:50px auto;
 	box-shadow: -2px -2px 2px #EFEFEF,5px 5px 5px #B9B9B9;
 }
+.myColor{
+	margin-left: 900px;
+	color:#B9B9B9;
+	font-family: "微软雅黑";
+}
+#one,#two{
+	margin-right: 20px;
+	border-style: none;
+	border-radius: 15px;
+	width:30px;
+	height:30px;
+}
+/*
+hover上去出现小手
+ */
+.flush:hover{
+	cursor: pointer;
+	background-color: #B9B9B9;
+}
+/*
+去掉点击后出现的边框
+ */
+input{
+	outline: none;
+}
+#one{
+	background-color: #000;
+}
+#two{
+	background-color: #fff;
+	color:#fff;
+}
+.flush{
+	float: right;
+	margin-right:100px;
+	width:150px;
+	height:25px;
+	line-height: 25px;
+	background-color: #636969;
+	color:#fff;
+	border-style: none;
+}

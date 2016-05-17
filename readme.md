@@ -59,3 +59,4 @@ context，然后直接调用 context 的 moveTo,lineTo 方法就可以绘制线�
 标，终点横坐标，终点纵坐标)可以展示一张已有的图片，想展示出来就要等加载完再展示，万万要记得将 context.drawImage 放在 logo.onload=function(){}内，放在绘线前面的话就是先绘图再绘线，此时图片就是作为背景的。
 
 **6.** context.beginPath();context.arc(圆心的横坐标，圆心的纵坐标，弧度的起始值，弧度的终止值);context.closePath();三者才能画出一个扇形（包括圆），但万万要记得 context.fill(); 将 圆 填 充 画 出 来 的 默 认 为 黑 色 的 圆 ， 如 果 是context.stroke()画出来的是默认的黑色边的空圆。同理 context.fillStyle=””;设 置 圆 的 样 式 ， 圆 的 渐 变 样 式 可 以 用 同 心 圆 来 制 作 ， 用 到 了 var gradient=context.createRadialGradient(第一个圆的圆心横坐标，纵坐标，半径，第二个圆的圆心横坐标，纵坐标，半径)；gradient.addColorStop(0,”颜色”);gradient.addColorStop(1,”颜色”);context.strokeStyle=gradient;设置样式成功。
+### 作者：pinglikethinking 勿盗
